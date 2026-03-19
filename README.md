@@ -26,7 +26,7 @@ python app/loader.py
 
 dbt run
 
-##RESULTS
+## RESULTS
 
 
 <img width="750" height="444" alt="Снимок экрана 2026-03-19 в 15 45 13" src="https://github.com/user-attachments/assets/a56b6b72-53b1-4d74-b12c-b0e43ba3075d" />
