@@ -1,0 +1,156 @@
+[0m14:16:45.791456 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a6b1130>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b71ec10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b71ea30>]}
+
+
+============================== 14:16:45.794583 | 9d88d9ff-6f6f-4d5c-8343-d57c12391d7d ==============================
+[0m14:16:45.794583 [info ] [MainThread]: Running with dbt=1.10.20
+[0m14:16:45.794906 [debug] [MainThread]: running dbt with arguments {'empty': 'False', 'log_path': '/Users/sdxz/test/dbt_project/logs', 'no_print': 'None', 'write_json': 'True', 'use_colors': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'debug': 'False', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True', 'log_cache_events': 'False', 'version_check': 'True', 'fail_fast': 'False', 'printer_width': '80', 'target_path': 'None', 'use_experimental_parser': 'False', 'partial_parse': 'True', 'static_parser': 'True', 'quiet': 'False', 'log_format': 'default', 'indirect_selection': 'eager', 'profiles_dir': '/Users/sdxz/test/dbt_project', 'introspect': 'True', 'warn_error': 'None', 'cache_selected_only': 'False'}
+[0m14:16:45.907227 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '9d88d9ff-6f6f-4d5c-8343-d57c12391d7d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b6fd160>]}
+[0m14:16:45.944633 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '9d88d9ff-6f6f-4d5c-8343-d57c12391d7d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b7e2460>]}
+[0m14:16:45.945367 [info ] [MainThread]: Registered adapter: clickhouse=1.9.8
+[0m14:16:46.030385 [debug] [MainThread]: checksum: a2dd717d56b7fa105aa967460f8408a71460d755763c8570e48c01c133187aea, vars: {}, profile: , target: , version: 1.10.20
+[0m14:16:46.030934 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m14:16:46.031148 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '9d88d9ff-6f6f-4d5c-8343-d57c12391d7d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b8d0580>]}
+[0m14:16:46.755699 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.dbt_project.craft_summary' (models/craft_summary.sql) depends on a node named 'people' which was not found
+[0m14:16:46.757387 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 1.0176734, "process_in_blocks": "0", "process_kernel_time": 0.180371, "process_mem_max_rss": "111558656", "process_out_blocks": "0", "process_user_time": 1.679628}
+[0m14:16:46.757632 [debug] [MainThread]: Command `dbt run` failed at 14:16:46.757579 after 1.02 seconds
+[0m14:16:46.757842 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a6b1130>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10be14190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bdfbee0>]}
+[0m14:16:46.758045 [debug] [MainThread]: Flushing usage events
+[0m14:16:48.043323 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:18:42.138346 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a0dd1c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b1564c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b1562e0>]}
+
+
+============================== 14:18:42.141584 | f2003e2b-fc09-4b8f-8705-bd39b97a9d37 ==============================
+[0m14:18:42.141584 [info ] [MainThread]: Running with dbt=1.10.20
+[0m14:18:42.141935 [debug] [MainThread]: running dbt with arguments {'empty': 'False', 'use_experimental_parser': 'False', 'profiles_dir': '/Users/sdxz/test/dbt_project', 'send_anonymous_usage_stats': 'True', 'printer_width': '80', 'log_format': 'default', 'debug': 'False', 'write_json': 'True', 'static_parser': 'True', 'log_cache_events': 'False', 'target_path': 'None', 'use_colors': 'True', 'introspect': 'True', 'fail_fast': 'False', 'version_check': 'True', 'invocation_command': 'dbt run', 'indirect_selection': 'eager', 'quiet': 'False', 'no_print': 'None', 'cache_selected_only': 'False', 'partial_parse': 'True', 'log_path': '/Users/sdxz/test/dbt_project/logs', 'warn_error': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])'}
+[0m14:18:42.253696 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f2003e2b-fc09-4b8f-8705-bd39b97a9d37', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1088411c0>]}
+[0m14:18:42.289970 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'f2003e2b-fc09-4b8f-8705-bd39b97a9d37', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b1c7d00>]}
+[0m14:18:42.290661 [info ] [MainThread]: Registered adapter: clickhouse=1.9.8
+[0m14:18:42.363407 [debug] [MainThread]: checksum: a2dd717d56b7fa105aa967460f8408a71460d755763c8570e48c01c133187aea, vars: {}, profile: , target: , version: 1.10.20
+[0m14:18:42.363924 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m14:18:42.364137 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'f2003e2b-fc09-4b8f-8705-bd39b97a9d37', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10aa32610>]}
+[0m14:18:43.138576 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'f2003e2b-fc09-4b8f-8705-bd39b97a9d37', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b7cfee0>]}
+[0m14:18:43.180366 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/sdxz/test/dbt_project/target/manifest.json
+[0m14:18:43.182067 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/sdxz/test/dbt_project/target/semantic_manifest.json
+[0m14:18:43.193745 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'f2003e2b-fc09-4b8f-8705-bd39b97a9d37', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b88fe50>]}
+[0m14:18:43.194025 [info ] [MainThread]: Found 1 model, 486 macros
+[0m14:18:43.194215 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f2003e2b-fc09-4b8f-8705-bd39b97a9d37', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b66f970>]}
+[0m14:18:43.194908 [info ] [MainThread]: 
+[0m14:18:43.195098 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m14:18:43.195256 [info ] [MainThread]: 
+[0m14:18:43.195531 [debug] [MainThread]: Acquiring new clickhouse connection 'master'
+[0m14:18:43.196210 [debug] [ThreadPool]: Acquiring new clickhouse connection 'list_'
+[0m14:18:43.202564 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:18:45.529189 [debug] [ThreadPool]: dbt_clickhouse adapter: On list_: /* {"app": "dbt", "dbt_version": "1.10.20", "profile_name": "clickhouse_profile", "target_name": "dev", "connection_name": "list_"} */
+
+    select name from system.databases
+  ...
+[0m14:18:45.533362 [debug] [ThreadPool]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m14:18:45.553448 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_, now list__default)
+[0m14:18:45.561403 [debug] [ThreadPool]: dbt_clickhouse adapter: On list__default: /* {"app": "dbt", "dbt_version": "1.10.20", "profile_name": "clickhouse_profile", "target_name": "dev", "connection_name": "list__default"} */
+select
+      t.name as name,
+      t.database as schema,
+      multiIf(
+        engine in ('MaterializedView', 'View'), 'view',
+        engine = 'Dictionary', 'dictionary',
+        'table'
+      ) as type,
+      db.engine as db_engine,0 as is_on_cluster
+          from system.tables as t join system.databases as db on t.database = db.name
+        where schema = 'default'
+      
+
+  ...
+[0m14:18:45.578588 [debug] [ThreadPool]: dbt_clickhouse adapter: SQL status: OK in 0.02 seconds
+[0m14:18:45.581029 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f2003e2b-fc09-4b8f-8705-bd39b97a9d37', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b66f970>]}
+[0m14:18:45.583996 [debug] [Thread-1  ]: Began running node model.dbt_project.craft_summary
+[0m14:18:45.584642 [info ] [Thread-1  ]: 1 of 1 START sql table model `default`.`craft_summary` ......................... [RUN]
+[0m14:18:45.585147 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly list__default, now model.dbt_project.craft_summary)
+[0m14:18:45.585592 [debug] [Thread-1  ]: Began compiling node model.dbt_project.craft_summary
+[0m14:18:45.593743 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_project.craft_summary"
+[0m14:18:45.594808 [debug] [Thread-1  ]: Began executing node model.dbt_project.craft_summary
+[0m14:18:45.618682 [debug] [Thread-1  ]: Creating new relation craft_summary
+[0m14:18:45.668717 [debug] [Thread-1  ]: dbt_clickhouse adapter: On model.dbt_project.craft_summary: /* {"app": "dbt", "dbt_version": "1.10.20", "profile_name": "clickhouse_profile", "target_name": "dev", "node_id": "model.dbt_project.craft_summary"} */
+
+            
+
+    
+        create table `default`.`craft_summary`
+        
+  
+        
+  engine = MergeTree()
+        
+      order by (tuple())
+        
+        
+        
+        
+                    -- end_of_sql
+                    SETTINGS replicated_deduplication_window='0'
+
+                    
+            empty
+          as (
+            SELECT
+    craft,
+    count(*) as people_count
+FROM people
+GROUP BY craft
+          )
+        
+        ...
+[0m14:18:45.676399 [debug] [Thread-1  ]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m14:18:45.686899 [debug] [Thread-1  ]: dbt_clickhouse adapter: On model.dbt_project.craft_summary: /* {"app": "dbt", "dbt_version": "1.10.20", "profile_name": "clickhouse_profile", "target_name": "dev", "node_id": "model.dbt_project.craft_summary"} */
+
+    select name, type from system.columns where table = 'craft_summary'
+    
+      
+        and database = 'default'
+      
+    
+    order by position
+  ...
+[0m14:18:45.692884 [debug] [Thread-1  ]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m14:18:45.695180 [debug] [Thread-1  ]: Writing runtime sql for node "model.dbt_project.craft_summary"
+[0m14:18:45.695855 [debug] [Thread-1  ]: dbt_clickhouse adapter: On model.dbt_project.craft_summary: /* {"app": "dbt", "dbt_version": "1.10.20", "profile_name": "clickhouse_profile", "target_name": "dev", "node_id": "model.dbt_project.craft_summary"} */
+
+  
+    
+    
+    
+        
+         
+
+
+        insert into `default`.`craft_summary`
+        ("craft", "people_count")SELECT
+    craft,
+    count(*) as people_count
+FROM people
+GROUP BY craft
+  ...
+[0m14:18:45.702379 [debug] [Thread-1  ]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m14:18:45.716612 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f2003e2b-fc09-4b8f-8705-bd39b97a9d37', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108a4c4c0>]}
+[0m14:18:45.717138 [info ] [Thread-1  ]: 1 of 1 OK created sql table model `default`.`craft_summary` .................... [[32mOK[0m in 0.13s]
+[0m14:18:45.717553 [debug] [Thread-1  ]: Finished running node model.dbt_project.craft_summary
+[0m14:18:45.718300 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:18:45.718506 [debug] [MainThread]: Connection 'model.dbt_project.craft_summary' was left open.
+[0m14:18:45.718691 [debug] [MainThread]: On model.dbt_project.craft_summary: Close
+[0m14:18:45.718913 [info ] [MainThread]: 
+[0m14:18:45.719125 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 2.52 seconds (2.52s).
+[0m14:18:45.719548 [debug] [MainThread]: Command end result
+[0m14:18:45.736110 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/sdxz/test/dbt_project/target/manifest.json
+[0m14:18:45.737467 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/sdxz/test/dbt_project/target/semantic_manifest.json
+[0m14:18:45.741627 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/sdxz/test/dbt_project/target/run_results.json
+[0m14:18:45.741812 [info ] [MainThread]: 
+[0m14:18:45.742049 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m14:18:45.742217 [info ] [MainThread]: 
+[0m14:18:45.742410 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m14:18:45.744343 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 3.6543212, "process_in_blocks": "0", "process_kernel_time": 0.244007, "process_mem_max_rss": "122339328", "process_out_blocks": "0", "process_user_time": 2.002604}
+[0m14:18:45.744576 [debug] [MainThread]: Command `dbt run` succeeded at 14:18:45.744528 after 3.65 seconds
+[0m14:18:45.744785 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a0dd1c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a349be0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b1c7d00>]}
+[0m14:18:45.744984 [debug] [MainThread]: Flushing usage events
+[0m14:18:46.555100 [debug] [MainThread]: An error was encountered while trying to flush usage events

@@ -1,0 +1,11 @@
+name: "dbt_project"
+version: "1.0"
+config-version: 2
+
+profile: "clickhouse_profile"
+
+model-paths: ["models"]
+
+models:
+  dbt_project:
+    +materialized: table
